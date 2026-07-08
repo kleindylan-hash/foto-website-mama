@@ -1,0 +1,142 @@
+# foto-website-mama<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fotografie Portfolio</title>
+    <style>
+        /* Basis styling en kleuren */
+        body {
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fafafa;
+            color: #333;
+        }
+
+        /* De header (Bovenkant van de website) */
+        header {
+            text-align: center;
+            padding: 50px 20px;
+            background-color: #fff;
+            border-bottom: 1px solid #eaeaea;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+            font-weight: 300;
+            letter-spacing: 2px;
+        }
+
+        header p {
+            color: #777;
+            font-size: 1.1em;
+            margin-top: 10px;
+        }
+
+        /* Navigatiemenu */
+        nav {
+            margin-top: 20px;
+        }
+
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+            text-transform: uppercase;
+            font-size: 0.9em;
+        }
+
+        nav a:hover {
+            color: #888;
+        }
+
+        /* De Fotogalerij (Grid layout) */
+        .gallery-container {
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        .gallery {
+            display: grid;
+            /* Zorgt ervoor dat foto's netjes naast elkaar staan en op mobiel onder elkaar */
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            grid-gap: 20px; 
+        }
+
+        /* Styling voor elke individuele foto */
+        .gallery-item {
+            width: 100%;
+            height: 300px; /* Vaste hoogte voor een strak grid */
+            object-fit: cover; /* Zorgt dat foto's niet vervormen */
+            border-radius: 4px;
+            transition: transform 0.3s ease;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+        }
+
+        .gallery-item:hover {
+            transform: scale(1.03); /* Licht inzoomen als je er met de muis overheen gaat */
+            cursor: pointer;
+        }
+
+        /* Footer (Onderkant) */
+        footer {
+            text-align: center;
+            padding: 30px;
+            margin-top: 50px;
+            background-color: #fff;
+            color: #777;
+            border-top: 1px solid #eaeaea;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- HEADER: Pas hier de naam van je moeder aan -->
+    <header>
+        <h1>Naam Moeder Fotografie</h1>
+        <p>Vangt de mooiste momenten in beeld</p>
+        <nav>
+            <a href="#">Portfolio</a>
+            <a href="#">Over Mij</a>
+            <a href="#">Contact</a>
+        </nav>
+    </header>
+
+    <!-- GALERIJ: Hier upload/link je later de foto's -->
+    <div class="gallery-container">
+        <div class="gallery">
+            <!-- Foto 1 -->
+            <!-- VERVANG 'https://via.placeholder.com/600x400' MET DE LINK NAAR JOUW FOTO (bijv. 'fotos/foto1.jpg') -->
+            <img class="gallery-item" src="https://via.placeholder.com/600x400?text=Foto+1+Hier" alt="Beschrijving van foto 1">
+            
+            <!-- Foto 2 -->
+            <img class="gallery-item" src="https://via.placeholder.com/600x400?text=Foto+2+Hier" alt="Beschrijving van foto 2">
+            
+            <!-- Foto 3 -->
+            <img class="gallery-item" src="https://via.placeholder.com/600x400?text=Foto+3+Hier" alt="Beschrijving van foto 3">
+            
+            <!-- Foto 4 -->
+            <img class="gallery-item" src="https://via.placeholder.com/600x400?text=Foto+4+Hier" alt="Beschrijving van foto 4">
+            
+            <!-- Foto 5 -->
+            <img class="gallery-item" src="https://via.placeholder.com/600x400?text=Foto+5+Hier" alt="Beschrijving van foto 5">
+            
+            <!-- Foto 6 -->
+            <img class="gallery-item" src="https://via.placeholder.com/600x400?text=Foto+6+Hier" alt="Beschrijving van foto 6">
+
+            <!-- Wil je meer foto's? Kopieer en plak gewoon de <img> regel hierboven nog een paar keer! -->
+        </div>
+    </div>
+
+    <!-- FOOTER: Pas het jaartal en de naam aan -->
+    <footer>
+        &copy; 2026 Naam Moeder Fotografie. Alle rechten voorbehouden.
+    </footer>
+
+</body>
+</html>
